@@ -17,7 +17,7 @@ void main()
         scanf("%s", HASH);
 
         int i, j, hexaChar, hexaString, flag = 0, LOCKED[SIZE];
-        LOCKED[0] = 1;
+        LOCKED[0] = -1;
         for (i = 2, j = hexaChar = hexaString = 0; HASH[i]; i++)
         {
             if (isPossibleHexa(HASH[i - 1], HASH[i - 2]) && (i - 2 != LOCKED[j]))
